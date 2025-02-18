@@ -1,0 +1,103 @@
+{% extends 'iptv/base.html' %}
+{% load static %}
+
+{% block header %}
+    <div class="hd_brand">
+        <h1>IPTV stream server</h1>
+    </div>
+    <div class="hd_user">
+        {% if request.user.is_authenticated %}
+            <h3>Пользователь: {{ request.user.username }}; <a href="{% url 'logout_iptv' %}">Выйти</a></h3>
+        {% else %}
+            <h3><a href="{% url 'iptv_panel' %}">Войдите в систему</a></h3>
+        {% endif %}
+    </div>
+{% endblock %}
+
+{% block sidebar %}
+    <ul>
+        <li>Главная</li>
+            <ul>
+                <li class="side-li"><a href="{% url 'iptv_panel' %}tools">О системе</a></li>
+                <li class="side-li"><a href="{% url 'iptv_panel' %}convert">Конвертор видео</a></li>
+                <li class="side-li"><a href="{% url 'iptv_panel' %}vod">Видео по запросу</a></li>
+            </ul>
+        <li>Эфирное TV</li>
+            <ul>
+                {% for dvb in Dvbt %}
+                    {% if dvb.active %}
+                        <li class="side-li">
+                            <a class="norm" href="{% url 'iptv_panel' %}dvbt/change/{{ dvb.id }}" title="Выключить канал">
+                                    <img src="{% static 'iptv/images/icon-yes.svg' %}">
+                            </a>
+                            <a href="{% url 'iptv_panel' %}dvbt/{{ dvb.id }}"> {{ dvb.name }}({{ dvb.freq }} MHz)</a>
+                        </li>
+                    {% else %}
+                        <li class="side-li">
+                            <a class="norm" href="{% url 'iptv_panel' %}dvbt/change/{{ dvb.id }}"
+                                   title="Включить канал">
+                                    <img src="{% static 'iptv/images/icon-no.svg' %}">
+                            </a>
+                            <a href="{% url 'iptv_panel' %}dvbt/{{ dvb.id }}"> {{ dvb.name }}({{ dvb.freq }} MHz)</a>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        <li>Потоки</li>
+            <ul>
+                {% for stream in Streams %}
+                    <li class="side-li">
+                        <a class="norm" href="{% url 'iptv_panel' %}streams/remove/{{ stream.id }}" title="Удалить поток">
+                            <img src="{% static 'iptv/images/icon-delete.svg' %}">
+                        </a>
+                        <a href="{% url 'iptv_panel' %}streams/{{ stream.id }}">
+                            {{ stream.udp_ip }}:{{ stream.udp_port }} - {{ stream.name }}
+                        </a>
+                    </li>
+                {% endfor %}
+                <li class="side-li">
+                    <a class="norm" href="{% url 'iptv_panel' %}streams/add" title="Добавить поток">
+                        <img src="{% static 'iptv/images/icon-add.svg' %}">
+                    </a>
+                    <a href="{% url 'iptv_panel' %}streams/add">Добавить</a>
+                </li>
+            </ul>
+        <li>Группы</li>
+            <ul>
+                {% for group in Groups %}
+                    <li class="side-li">
+                        <a class="norm" href="{% url 'iptv_panel' %}groups/remove/{{ group.id }}" title="Удалить группу">
+                            <img src="{% static 'iptv/images/icon-delete.svg' %}">
+                        </a>
+                        <a href="{% url 'iptv_panel' %}groups/{{ group.id }}">
+                            {{ group.name }} - {{ group.start_stream }}
+                        </a>
+                    </li>
+                {% endfor %}
+                <li class="side-li">
+                    <a class="norm" href="{% url 'iptv_panel' %}groups/add" title="Добавить группу">
+                        <img src="{% static 'iptv/images/icon-add.svg' %}">
+                    </a>
+                    <a href="{% url 'iptv_panel' %}groups/add">Добавить</a>
+                </li>
+            </ul>
+        <li class="side-li"><a href="{% url 'iptv_panel' %}stb/edit">Приставки</a></li>
+    </ul>
+{% endblock %}
+
+{% block mainbar %}
+    <p>Содержимое mcast-1.conf</p>
+    {% for l in Mcast_1 %}
+        <p>{{ l }}</p>
+    {% endfor %}
+    <br>
+    <p>Содержимое mcast-2.conf</p>
+    {% for l in Mcast_2 %}
+        <p>{{ l }}</p>
+    {% endfor %}
+    <br>
+    <div class="log-text">
+        <p class="log-p">{{ Log }}</p>
+    </div>
+
+{% endblock %}

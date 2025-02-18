@@ -1,0 +1,34 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'iptv/css/iptv.css' %}">
+    <title>
+        {% block title %}
+        IPTV stream server
+        {% endblock %}
+    </title>
+</head>
+<body>
+    <header class="header">
+        {% block header %}
+        {% endblock %}
+    </header>
+
+    <main class="main">
+
+        <div class="sidebar">
+            {% block sidebar %}
+            {% endblock %}
+        </div>
+
+        <div class="mainbar">
+            {% block mainbar %}
+            {% endblock %}
+        </div>
+
+    </main>
+</body>
+</html>

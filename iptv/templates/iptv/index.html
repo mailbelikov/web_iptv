@@ -1,0 +1,56 @@
+{% extends 'iptv/base.html' %}}
+
+{% block header %}
+    <h1>IPTV stream server</h1>
+
+    <div id="user-tools">
+        <h3>Пользователь: {{ User }}</h3>
+    </div>
+{% endblock %}
+
+{% block nav %}
+    <h3>Панель управления</h3>
+{% endblock %}
+
+{% block sidebar %}
+    <ul>
+        <li>Эфирное TV</li>
+            <ul>
+                {% for dvb in Dvbt %}
+                    {% if dvb.active %}
+                        <li class="menu1" id="li-yes">
+                            <a href="{% url 'iptv_panel' %}dvbt/{{ dvb.id }}">{{ dvb.name }}({{ dvb.freq }} MHz)</a>
+                        </li>
+                    {% else %}
+                        <li class="menu1" id="li-no">
+                            <a href="{% url 'iptv_panel' %}dvbt/{{ dvb.id }}">{{ dvb.name }}({{ dvb.freq }} MHz)</a>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        <li>Потоки</li>
+            <ul>
+                {% for stream in Streams %}
+                    <li class="menu1">
+                        <a href="{% url 'iptv_panel' %}streams/{{ Stream.name }} ">{{ stream.udp_ip }}:{{ stream.udp_port }} - {{ stream.name }}</a>
+                    </li>
+                {% endfor %}
+                <li class="menu1" id="li-add">
+                    <a href="{% url 'iptv_panel' %}streams/add">Добавить</a>
+                </li>
+            </ul>
+        <li>Группы</li>
+            <ul>
+                <li class="menu1" id="li-add">
+                    <a href="{% url 'iptv_panel' %}groups/add">Добавить</a>
+                </li>
+            </ul>
+        <li>Приставки</li>
+            <ul>
+                <li class="menu1" id="li-add">
+                    <a href="{% url 'iptv_panel' %}stb/add">Добавить</a>
+                </li>
+            </ul>
+    </ul>
+{% endblock %}
+

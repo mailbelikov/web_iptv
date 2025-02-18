@@ -1,0 +1,31 @@
+{% extends 'iptv/tools.html' %}
+{% load static %}
+
+{% block mainbar %}
+    <table>
+        <caption>Список программ: <b>{{ Dvbt_current.name }} </b></caption>
+        <thead>
+            <th width="200px">Название канала</th>
+            <th width="70px">Signature ID</th>
+            <th width="120px">UDP адрес</th>
+            <th width="70px">UDP порт</th>
+            <th width="30px"></th>
+        </thead>
+        <tbody>
+            {% for list in Dvbt_list %}
+                <tr class="{% cycle 'tr_1' 'tr_2' %}">
+                    <td align="left" >{{ list.name }}</td>
+                    <td align="center">{{ list.sid }}</td>
+                    <td align="center">{{ list.udp_ip }}</td>
+                    <td align="center">{{ list.udp_port }}</td>
+                    <td align="center">
+                        <a href="{% url 'iptv_panel' %}dvbt/{{ Dvbt_current.id }}/{{ list.id }}"
+                           title="Изменить адрес и порт">
+                            <img src="{% static 'iptv/images/icon-change.svg' %}">
+                        </a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

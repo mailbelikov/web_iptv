@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+        <title>Amino Home Page</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="chan.js"></script>
+    </head>
+    <body onload="init()">
+        <script type="text/javascript">
+            function init() {
+                
+                    add(1, "igmp://224.10.10.10:5000", "ch-1");
+                
+                    add(2, "igmp://224.10.20.17:5000", "ch-2");
+                
+                    add(3, "igmp://224.10.50.10:5000", "ch-3");
+                
+                    add(4, "igmp://224.10.50.11:5000", "ch-4");
+                
+                addChannelList(1,4);
+                start(3);
+            }
+        </script>
+        <div id="channel_popup"></div>
+        <div id="channel_info"></div>
+        <div id="channel_menu"></div>
+    </body>
+</html>

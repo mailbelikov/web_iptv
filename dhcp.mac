@@ -1,0 +1,10 @@
+host STB6 {
+  hardware ethernet ed:22:da:33:a5:04;
+  fixed-address 192.168.0.145;
+  option AMINO.homepage "http://192.168.0.50:8081/group-14.html";
+}
+host STB8 {
+  hardware ethernet ec:22:da:04:a5:10;
+  fixed-address 192.168.0.146;
+  option AMINO.homepage "http://192.168.0.50:8081/group-15.html";
+}

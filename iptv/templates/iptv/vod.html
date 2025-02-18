@@ -1,0 +1,25 @@
+{% extends 'iptv/tools.html' %}
+{% load static %}
+
+{% block mainbar %}
+    <form method="post">
+        {% csrf_token %}
+        <p>
+            Выберите поток и контент, который нужно запустить в этом потоке
+            <br>
+        </p>
+        <label for="stream"></label>
+        <select id="stream" placeholder="Поток" name="stream">
+            {% for stream in Streams %}
+                <option value="{{ stream.udp_ip }}:{{ stream.udp_port }}">{{ stream.udp_ip }}  </option>
+            {% endfor %}
+        </select>
+        <label for="files"></label>
+        <select id="files" name="content">
+            {% for f in Files %}
+                <option value="{{ f }}">{{ f }}  </option>
+            {% endfor %}
+        </select>
+        <button type="submit"> ОК </button>
+    </form>
+{% endblock %}

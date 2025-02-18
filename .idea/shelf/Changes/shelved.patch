@@ -1,0 +1,451 @@
+Index: ../.idea/inspectionProfiles/profiles_settings.xml
+===================================================================
+diff --git a/../.idea/inspectionProfiles/profiles_settings.xml b/../.idea/inspectionProfiles/profiles_settings.xml
+deleted file mode 100644
+--- a/../.idea/inspectionProfiles/profiles_settings.xml	(revision 3d5c23a41e2e94864c7b3283006c69ce22306624)
++++ /dev/null	(revision 3d5c23a41e2e94864c7b3283006c69ce22306624)
+@@ -1,6 +0,0 @@
+-<component name="InspectionProjectProfileManager">
+-  <settings>
+-    <option name="USE_PROJECT_PROFILE" value="false" />
+-    <version value="1.0" />
+-  </settings>
+-</component>
+\ No newline at end of file
+Index: ../.idea/misc.xml
+===================================================================
+diff --git a/../.idea/misc.xml b/../.idea/misc.xml
+deleted file mode 100644
+--- a/../.idea/misc.xml	(revision 3d5c23a41e2e94864c7b3283006c69ce22306624)
++++ /dev/null	(revision 3d5c23a41e2e94864c7b3283006c69ce22306624)
+@@ -1,10 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="Black">
+-    <option name="sdkName" value="Python 3.12" />
+-  </component>
+-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12 (MyPy)" project-jdk-type="Python SDK" />
+-  <component name="PyCharmProfessionalAdvertiser">
+-    <option name="shown" value="true" />
+-  </component>
+-</project>
+\ No newline at end of file
+Index: ../.idea/modules.xml
+===================================================================
+diff --git a/../.idea/modules.xml b/../.idea/modules.xml
+deleted file mode 100644
+--- a/../.idea/modules.xml	(revision 3d5c23a41e2e94864c7b3283006c69ce22306624)
++++ /dev/null	(revision 3d5c23a41e2e94864c7b3283006c69ce22306624)
+@@ -1,8 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="ProjectModuleManager">
+-    <modules>
+-      <module fileurl="file://$PROJECT_DIR$/.idea/MyPy.iml" filepath="$PROJECT_DIR$/.idea/MyPy.iml" />
+-    </modules>
+-  </component>
+-</project>
+\ No newline at end of file
+Index: ../.idea/MyPy.iml
+===================================================================
+diff --git a/../.idea/MyPy.iml b/../.idea/MyPy.iml
+deleted file mode 100644
+--- a/../.idea/MyPy.iml	(revision 3d5c23a41e2e94864c7b3283006c69ce22306624)
++++ /dev/null	(revision 3d5c23a41e2e94864c7b3283006c69ce22306624)
+@@ -1,14 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<module type="PYTHON_MODULE" version="4">
+-  <component name="NewModuleRootManager">
+-    <content url="file://$MODULE_DIR$">
+-      <excludeFolder url="file://$MODULE_DIR$/.venv" />
+-    </content>
+-    <orderEntry type="jdk" jdkName="Python 3.12" jdkType="Python SDK" />
+-    <orderEntry type="sourceFolder" forTests="false" />
+-  </component>
+-  <component name="PyDocumentationSettings">
+-    <option name="format" value="PLAIN" />
+-    <option name="myDocStringFormat" value="Plain" />
+-  </component>
+-</module>
+\ No newline at end of file
+Index: ../.idea/vcs.xml
+===================================================================
+diff --git a/../.idea/vcs.xml b/../.idea/vcs.xml
+deleted file mode 100644
+--- a/../.idea/vcs.xml	(revision 3d5c23a41e2e94864c7b3283006c69ce22306624)
++++ /dev/null	(revision 3d5c23a41e2e94864c7b3283006c69ce22306624)
+@@ -1,7 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="VcsDirectoryMappings">
+-    <mapping directory="" vcs="Git" />
+-    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+-  </component>
+-</project>
+\ No newline at end of file
+Index: ../.idea/workspace.xml
+===================================================================
+diff --git a/../.idea/workspace.xml b/../.idea/workspace.xml
+deleted file mode 100644
+--- a/../.idea/workspace.xml	(revision 3d5c23a41e2e94864c7b3283006c69ce22306624)
++++ /dev/null	(revision 3d5c23a41e2e94864c7b3283006c69ce22306624)
+@@ -1,92 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="AutoImportSettings">
+-    <option name="autoReloadType" value="SELECTIVE" />
+-  </component>
+-  <component name="ChangeListManager">
+-    <list default="true" id="c77fa5e2-e605-4872-9bd1-70f8da925480" name="Changes" comment="">
+-      <change afterPath="$PROJECT_DIR$/web_iptv/iptv/templates/iptv/streams_add.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/web_iptv/iptv/templates/iptv/streams_list.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/web_iptv/iptv/templates/iptv/tools.html" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/MyPy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MyPy.iml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/web_iptv/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/web_iptv/db.sqlite3" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/web_iptv/iptv/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_iptv/iptv/admin.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/web_iptv/iptv/forms.py" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/web_iptv/iptv/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_iptv/iptv/models.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/web_iptv/iptv/static/iptv/css/iptv.css" beforeDir="false" afterPath="$PROJECT_DIR$/web_iptv/iptv/static/iptv/css/iptv.css" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/web_iptv/iptv/templates/iptv/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_iptv/iptv/templates/iptv/base.html" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/web_iptv/iptv/templates/iptv/dvbt_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_iptv/iptv/templates/iptv/dvbt_list.html" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/web_iptv/iptv/templates/iptv/dvbt_list_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_iptv/iptv/templates/iptv/dvbt_list_edit.html" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/web_iptv/iptv/templates/iptv/index.html" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/web_iptv/iptv/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_iptv/iptv/urls.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/web_iptv/iptv/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_iptv/iptv/views.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/web_iptv/mcast-1.conf" beforeDir="false" afterPath="$PROJECT_DIR$/web_iptv/mcast-1.conf" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/web_iptv/mcast-2.conf" beforeDir="false" afterPath="$PROJECT_DIR$/web_iptv/mcast-2.conf" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/web_iptv/web_iptv/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_iptv/web_iptv/settings.py" afterDir="false" />
+-    </list>
+-    <option name="SHOW_DIALOG" value="false" />
+-    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+-    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+-    <option name="LAST_RESOLUTION" value="IGNORE" />
+-  </component>
+-  <component name="FileTemplateManagerImpl">
+-    <option name="RECENT_TEMPLATES">
+-      <list>
+-        <option value="HTML File" />
+-      </list>
+-    </option>
+-  </component>
+-  <component name="Git.Settings">
+-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+-  </component>
+-  <component name="GitHubPullRequestSearchHistory">{
+-  &quot;lastFilter&quot;: {
+-    &quot;state&quot;: &quot;OPEN&quot;,
+-    &quot;assignee&quot;: &quot;mailbelikov&quot;
+-  }
+-}</component>
+-  <component name="GithubPullRequestsUISettings">{
+-  &quot;selectedUrlAndAccountId&quot;: {
+-    &quot;url&quot;: &quot;https://github.com/mailbelikov/MyPy.git&quot;,
+-    &quot;accountId&quot;: &quot;2da25b4d-28b5-4bd1-ad68-2b8d664b5052&quot;
+-  }
+-}</component>
+-  <component name="ProjectColorInfo">{
+-  &quot;associatedIndex&quot;: 2
+-}</component>
+-  <component name="ProjectId" id="2sOp4mS0E3vSErsQd7dnKJ8LAcZ" />
+-  <component name="ProjectViewState">
+-    <option name="hideEmptyMiddlePackages" value="true" />
+-    <option name="showLibraryContents" value="true" />
+-  </component>
+-  <component name="PropertiesComponent">{
+-  &quot;keyToString&quot;: {
+-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+-  }
+-}</component>
+-  <component name="SharedIndexes">
+-    <attachedChunks>
+-      <set>
+-        <option value="bundled-python-sdk-a5bc9544c897-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.23654.177" />
+-      </set>
+-    </attachedChunks>
+-  </component>
+-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+-  <component name="TaskManager">
+-    <task active="true" id="Default" summary="Default task">
+-      <changelist id="c77fa5e2-e605-4872-9bd1-70f8da925480" name="Changes" comment="" />
+-      <created>1738336288409</created>
+-      <option name="number" value="Default" />
+-      <option name="presentableId" value="Default" />
+-      <updated>1738336288409</updated>
+-    </task>
+-    <servers />
+-  </component>
+-</project>
+\ No newline at end of file
+Index: group-14.html
+===================================================================
+diff --git a/group-14.html b/group-14.html
+deleted file mode 100644
+--- a/group-14.html	(revision 3d5c23a41e2e94864c7b3283006c69ce22306624)
++++ /dev/null	(revision 3d5c23a41e2e94864c7b3283006c69ce22306624)
+@@ -1,28 +0,0 @@
+-<html>
+-    <head>
+-        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+-        <title>Amino Home Page</title>
+-        <link href="style.css" rel="stylesheet" type="text/css">
+-        <script type="text/javascript" src="chan.js"></script>
+-    </head>
+-    <body onload="init()">
+-        <script type="text/javascript">
+-            function init() {
+-                
+-                    add(1, "igmp://224.10.10.10:5000", "ch-1");
+-                
+-                    add(2, "igmp://224.10.20.17:5000", "ch-2");
+-                
+-                    add(3, "igmp://224.10.50.10:5000", "ch-3");
+-                
+-                    add(4, "igmp://224.10.50.11:5000", "ch-4");
+-                
+-                addChannelList(1,4);
+-                start(3);
+-            }
+-        </script>
+-        <div id="channel_popup"></div>
+-        <div id="channel_info"></div>
+-        <div id="channel_menu"></div>
+-    </body>
+-</html>
+\ No newline at end of file
+Index: group-15.html
+===================================================================
+diff --git a/group-15.html b/group-15.html
+deleted file mode 100644
+--- a/group-15.html	(revision 3d5c23a41e2e94864c7b3283006c69ce22306624)
++++ /dev/null	(revision 3d5c23a41e2e94864c7b3283006c69ce22306624)
+@@ -1,28 +0,0 @@
+-<html>
+-    <head>
+-        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+-        <title>Amino Home Page</title>
+-        <link href="style.css" rel="stylesheet" type="text/css">
+-        <script type="text/javascript" src="chan.js"></script>
+-    </head>
+-    <body onload="init()">
+-        <script type="text/javascript">
+-            function init() {
+-                
+-                    add(1, "igmp://224.10.10.10:5000", "ch-1");
+-                
+-                    add(2, "igmp://224.10.20.17:5000", "ch-2");
+-                
+-                    add(3, "igmp://224.10.50.10:5000", "ch-3");
+-                
+-                    add(4, "igmp://224.10.50.11:5000", "ch-4");
+-                
+-                addChannelList(1,4);
+-                start(2);
+-            }
+-        </script>
+-        <div id="channel_popup"></div>
+-        <div id="channel_info"></div>
+-        <div id="channel_menu"></div>
+-    </body>
+-</html>
+\ No newline at end of file
+Index: .idea/web_iptv.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/web_iptv.iml b/.idea/web_iptv.iml
+new file mode 100644
+--- /dev/null	(date 1739863549284)
++++ b/.idea/web_iptv.iml	(date 1739863549284)
+@@ -0,0 +1,12 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="PYTHON_MODULE" version="4">
++  <component name="NewModuleRootManager">
++    <content url="file://$MODULE_DIR$" />
++    <orderEntry type="jdk" jdkName="Python 3.12" jdkType="Python SDK" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++  <component name="PyDocumentationSettings">
++    <option name="format" value="PLAIN" />
++    <option name="myDocStringFormat" value="Plain" />
++  </component>
++</module>
+\ No newline at end of file
+Index: ../HTML-CSS-JS/test-01.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../HTML-CSS-JS/test-01.css b/../HTML-CSS-JS/test-01.css
+new file mode 100644
+--- /dev/null	(date 1739772062074)
++++ b/../HTML-CSS-JS/test-01.css	(date 1739772062074)
+@@ -0,0 +1,14 @@
++body {
++    color: #333;
++}
++.convert-radio {
++    border: 1px solid #333;
++    border-radius: 5px;
++    width: 300px;
++    padding: 15px 15px 15px;
++    line-height: 2rem;
++}
++
++.convert-radio button {
++    padding: 0 15px;
++}
+\ No newline at end of file
+Index: .idea/inspectionProfiles/profiles_settings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/inspectionProfiles/profiles_settings.xml b/.idea/inspectionProfiles/profiles_settings.xml
+new file mode 100644
+--- /dev/null	(date 1739863418064)
++++ b/.idea/inspectionProfiles/profiles_settings.xml	(date 1739863418064)
+@@ -0,0 +1,6 @@
++<component name="InspectionProjectProfileManager">
++  <settings>
++    <option name="USE_PROJECT_PROFILE" value="false" />
++    <version value="1.0" />
++  </settings>
++</component>
+\ No newline at end of file
+Index: ../HTML-CSS-JS/test-01.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../HTML-CSS-JS/test-01.js b/../HTML-CSS-JS/test-01.js
+new file mode 100644
+--- /dev/null	(date 1739778473107)
++++ b/../HTML-CSS-JS/test-01.js	(date 1739778473107)
+@@ -0,0 +1,18 @@
++function myFunc() {
++    let udp_ip = document.getElementById("ip_udp");
++    let err = document.getElementById("err");
++    let udp = udp_ip.value.split('.');
++    console.log(udp);
++    if ((Number(udp[0]) >= "224" && Number(udp[0]) <= "239") &&
++        (Number(udp[1]) >= 0 && Number(udp[1]) <= 254) &&
++        (Number(udp[2]) >= 0 && Number(udp[2]) <= 254) &&
++        (Number(udp[3]) > 0 && Number(udp[3]) < 254))
++        {
++           console.log("OK");
++           err.hidden = true;
++    }
++    else {
++        err.hidden = false;
++        console.log("Error");
++    }
++}
+\ No newline at end of file
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1739863418039)
++++ b/.idea/modules.xml	(date 1739863418039)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/web_iptv.iml" filepath="$PROJECT_DIR$/.idea/web_iptv.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: ../HTML-CSS-JS/test-01.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../HTML-CSS-JS/test-01.html b/../HTML-CSS-JS/test-01.html
+new file mode 100644
+--- /dev/null	(date 1739778475208)
++++ b/../HTML-CSS-JS/test-01.html	(date 1739778475208)
+@@ -0,0 +1,25 @@
++<!DOCTYPE html>
++<html>
++    <head>
++        <meta charset="utf-8">
++        <title>Конвертор</title>
++        <link rel="stylesheet" href="test-01.css">
++    </head>
++    <body>
++        <div>
++            <fieldset class="convert-radio">
++                <legend>Параметры</legend>
++                <label for="ip_udp">Адрес</label>
++                <input type="text" id="ip_udp" value="" name="ip_udp" size="15" required autofocus>
++                <br>
++                <label for="port_udp">Порт</label>
++                <input type="number" id="port_udp" value="5000" name="poer_udp" min="2048" max="9999" required>
++                <br>
++                <p id="err" hidden>Неверные данные ...</p>
++                <button type="button" onclick="myFunc()">Ок</button>
++            </fieldset>
++        </div>
++   
++        <script src="test-01.js"></script>
++    </body>
++</html>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+new file mode 100644
+--- /dev/null	(date 1739863418051)
++++ b/.idea/misc.xml	(date 1739863418051)
+@@ -0,0 +1,4 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12" project-jdk-type="Python SDK" />
++</project>
+\ No newline at end of file
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1739863418089)
++++ b/.idea/vcs.xml	(date 1739863418089)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(date 1739863418373)
++++ b/.idea/.gitignore	(date 1739863418373)
+@@ -0,0 +1,3 @@
++# Default ignored files
++/shelf/
++/workspace.xml

@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+        <title></title>
+        <script>
+            var stb = gSTB;
+            function init() {
+                stb.InitPlayer()
+                {% for num, list in stream_list %}
+                    {% if forloop.counter == stream_start %}
+                        stb.Play("ffmpeg udp://{{ list }}")
+                    {% endif %}
+                {% endfor %}
+            }
+        </script>
+    </head>
+        <body
+            onload="init()"
+        </body>
+</html>

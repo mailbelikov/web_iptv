@@ -1,0 +1,5 @@
+host STB{{ Stb_id }} {
+  hardware ethernet {{ Stb_mac }};
+  fixed-address {{ Stb_ip }};
+  option AMINO.homepage "{{ Home_page }}/group-{{ Stb_group }}.html";
+}

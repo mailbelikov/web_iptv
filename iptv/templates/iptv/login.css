@@ -1,0 +1,28 @@
+.login {
+    width: 280px;
+    height: auto;
+    background: #f8f8f8;
+    margin: auto;
+}
+
+.login-header {
+    height: 30;
+    color: #ffc;
+    background: #417690;
+    border-radius: 5px;
+}
+
+.login-header h4 {
+    line-height: 30px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.login-main {
+    color: #333;
+    margin-top: 5px;
+    margin-bottom: auto;
+    padding: 15 15 15;
+    border: 1px solid;
+    border-radius: 5px;
+}

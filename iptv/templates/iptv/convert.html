@@ -1,0 +1,25 @@
+{% extends 'iptv/tools.html' %}
+{% load static %}
+
+{% block mainbar %}
+    <form method="post">
+        {% csrf_token %}
+        <p>
+            Перекодировка будет происходить в фоновом режиме и займет некоторое время.
+            <br>
+            Позже видео появится в папке /content.
+            <br>
+        </p>
+        <h3>Файл
+            <label for="files"></label>
+            <select class="select_content" id="files" name="source">
+                {% for f in Files %}
+                    <option value="{{ f }}">{{ f }}  </option>
+                {% endfor %}
+            </select>
+            перекодировать в
+            <input type="text" maxlength="40" placeholder="Имя файла" name="file_name">
+            <button type="submit"> ОК </button>
+        </h3>
+    </form>
+{% endblock %}
